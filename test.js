@@ -6,7 +6,7 @@ chai.use(chaiHttp);
 const expect = chai.expect;
 
 describe('Anime Server', () => {
-  it('should return welcome message on root path', (done) => {
+  it('Debería retornar el mensaje de bienvenida en la ruta raíz', (done) => {
     chai
       .request(server)
       .get('/')
@@ -17,7 +17,7 @@ describe('Anime Server', () => {
       });
   });
 
-  it('should return all anime data on /list', (done) => {
+  it('Debería retornar toda la data de animo en /list', (done) => {
     chai
       .request(server)
       .get('/list')
@@ -29,7 +29,7 @@ describe('Anime Server', () => {
       });
   });
 
-  it('should return a specific anime by id', (done) => {
+  it('Debería retornar un animé específico por id', (done) => {
     const animeId = 1;
     chai
       .request(server)
@@ -42,7 +42,7 @@ describe('Anime Server', () => {
       });
   });
 
-  it('should return a specific anime by name', (done) => {
+  it('Debería retornar un animé específico por nombre', (done) => {
     const animeName = 'Akira';
     chai
       .request(server)
@@ -59,7 +59,7 @@ describe('Anime Server', () => {
       });
   });
 
-  it('should handle invalid routes with 404 Not Found', (done) => {
+  it('Debería manejar las rutas no encontradas con 404 no encontrado', (done) => {
     chai
       .request(server)
       .get('/invalid')
