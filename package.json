@@ -1,0 +1,29 @@
+{
+  "name": "final_drilling_6",
+  "version": "1.0.0",
+  "description": "Anime Server",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/payasoex/final_drilling_6.git"
+  },
+  "keywords": [],
+  "author": "Javier Retamal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/payasoex/final_drilling_6/issues"
+  },
+  "homepage": "https://github.com/payasoex/final_drilling_6#readme",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "chai-http": "^4.4.0",
+    "http": "^0.0.1-security",
+    "mocha": "^10.2.0",
+    "nodemon": "^3.0.1",
+    "url": "^0.11.1"
+  }
+}
