@@ -17,7 +17,7 @@ describe('Anime Server', () => {
       });
   });
 
-  it('Debería retornar toda la data de animo en /list', (done) => {
+  it('Debería retornar toda la data de anime en /list', (done) => {
     chai
       .request(server)
       .get('/list')
