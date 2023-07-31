@@ -1,6 +1,6 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
-const server = require('./index');
+const server = require('./index.js');
 
 chai.use(chaiHttp);
 const expect = chai.expect;
@@ -12,7 +12,7 @@ describe('Anime Server', () => {
       .get('/')
       .end((err, res) => {
         expect(res).to.have.status(200);
-        expect(res.text).to.equal('Welcome to Anime Server');
+        expect(res.text).to.equal('Bienvenido a Anime Server');
         done();
       });
   });
@@ -65,7 +65,7 @@ describe('Anime Server', () => {
       .get('/invalid')
       .end((err, res) => {
         expect(res).to.have.status(404);
-        expect(res.text).to.equal('404 Not Found');
+        expect(res.text).to.equal('404 No encontrado');
         done();
       });
   });
